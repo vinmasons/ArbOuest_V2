@@ -1,5 +1,5 @@
-import { groq, type PortableTextBlock } from "next-sanity";
-import type { Image } from "sanity";
+import { groq, type PortableTextBlock } from 'next-sanity';
+import type { Image } from 'sanity';
 
 export const settingsQuery = groq`*[_type == "settings"][0]`;
 export interface SettingsQueryResponse {
@@ -15,7 +15,7 @@ export interface Author {
 }
 export interface Post {
   _id: string;
-  status: "draft" | "published";
+  status: 'draft' | 'published';
   title: string;
   slug: string;
   excerpt?: string | null;

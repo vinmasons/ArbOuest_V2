@@ -1,4 +1,4 @@
-import PolitiqueConfidentialite from '@components/app/components/privacy';
+import PolitiqueConfidentialite from '@components/privacy';
 
 export default function Politique() {
   return (

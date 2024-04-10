@@ -1,24 +1,24 @@
-import type { Metadata, ResolvingMetadata } from "next";
-import { groq } from "next-sanity";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { Suspense } from "react";
+import type { Metadata, ResolvingMetadata } from 'next';
+import { groq } from 'next-sanity';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 
-import Avatar from "../../avatar";
-import CoverImage from "../../cover-image";
-import DateComponent from "../../date";
-import MoreStories from "../../more-stories";
-import PortableText from "../../portable-text";
+import Avatar from '../../avatar';
+import CoverImage from '../../cover-image';
+import DateComponent from '../../date';
+import MoreStories from '../../more-stories';
+import PortableText from '../../portable-text';
 
-import { sanityFetch } from "@/sanity/lib/fetch";
+import { sanityFetch } from '@/sanity/lib/fetch';
 import {
   PostQueryResponse,
   SettingsQueryResponse,
   postQuery,
   settingsQuery,
-} from "@/sanity/lib/queries";
-import { resolveOpenGraphImage } from "@/sanity/lib/utils";
-import * as demo from "@/sanity/lib/demo";
+} from '@/sanity/lib/queries';
+import { resolveOpenGraphImage } from '@/sanity/lib/utils';
+import * as demo from '@/sanity/lib/demo';
 
 type Props = {
   params: { slug: string };
@@ -27,14 +27,14 @@ type Props = {
 export async function generateStaticParams() {
   return sanityFetch<{ slug: string }[]>({
     query: groq`*[_type == "post" && defined(slug.current)]{"slug": slug.current}`,
-    perspective: "published",
+    perspective: 'published',
     stega: false,
   });
 }
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata,
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const post = await sanityFetch<PostQueryResponse>({
     query: postQuery,
@@ -101,7 +101,10 @@ export default async function PostPage({ params }: Props) {
           </div>
         </div>
         {post.content?.length && (
-          <PortableText className="mx-auto max-w-2xl" value={post.content} />
+          <PortableText
+            className="mx-auto max-w-2xl text-black"
+            value={post.content}
+          />
         )}
       </article>
       <aside>

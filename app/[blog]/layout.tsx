@@ -1,5 +1,5 @@
 import '../globals.css';
-
+import GlobalLayout from '../layout';
 import { Metadata } from 'next';
 import { VisualEditing, toPlainText } from 'next-sanity';
 import { Inter } from 'next/font/google';
@@ -44,29 +44,18 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
-  display: 'swap',
-});
-
-export default function RootLayout({
+export default function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} bg-soft-cream text-black`}>
-      <body>
-        <section className="min-h-screen">
-          {draftMode().isEnabled && <AlertBanner />}
-          <main>
-            <Navbar />
-            {children}
-          </main>
-        </section>
-        {draftMode().isEnabled && <VisualEditing />}
-      </body>
-    </html>
+    <GlobalLayout>
+      {draftMode().isEnabled && <AlertBanner />}
+
+      {children}
+
+      {draftMode().isEnabled && <VisualEditing />}
+    </GlobalLayout>
   );
 }
