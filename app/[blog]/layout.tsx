@@ -56,15 +56,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-  
+    <html lang="fr" className={`${inter.variable} bg-soft-cream text-black`}>
+      <body>
         <section className="min-h-screen">
           {draftMode().isEnabled && <AlertBanner />}
           <main>
-          
+            <Navbar />
             {children}
           </main>
         </section>
         {draftMode().isEnabled && <VisualEditing />}
-     
+      </body>
+    </html>
   );
 }
