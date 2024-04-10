@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://arbouest.com
+
+# Sitemaps
+Sitemap: https://arbouest.com/sitemap.xml
