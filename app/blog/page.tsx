@@ -17,7 +17,6 @@ import {
   heroQuery,
   settingsQuery,
 } from '@/sanity/lib/queries';
-import Navbar from '../components/Navbar';
 
 function Intro(props: { title: string | null | undefined; description: any }) {
   const title = props.title || demo.title;

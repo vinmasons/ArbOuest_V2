@@ -22,6 +22,7 @@ export interface Post {
   coverImage?: (Image & { alt?: string }) | null;
   date: string;
   author?: Author | null;
+  body?: PortableTextBlock[] | null; // Ensure the interface supports 'body'
 }
 
 const postFields = groq`
@@ -33,6 +34,16 @@ const postFields = groq`
   coverImage,
   "date": coalesce(date, _updatedAt),
   "author": author->{"name": coalesce(name, "Anonymous"), picture},
+  "body": body[]{   // Fetch all blocks in body, including nested structures
+    ...,
+    children[]{
+      ...
+    },
+    asset->{
+      _id,
+      url
+    }
+  },
 `;
 
 export const heroQuery = groq`*[_type == "post" && defined(slug.current)] | order(date desc, _updatedAt desc) [0] {
@@ -51,7 +62,6 @@ export const moreStoriesQuery = groq`*[_type == "post" && _id != $skip && define
 export type MoreStoriesQueryResponse = Post[] | null;
 
 export const postQuery = groq`*[_type == "post" && slug.current == $slug] [0] {
-  content,
   ${postFields}
 }`;
 export type PostQueryResponse =
