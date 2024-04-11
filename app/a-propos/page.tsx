@@ -44,7 +44,7 @@ const valueNous = [
 export default function AproposDeNous() {
   return (
     <div className="bg-soft-cream">
-      <main className="isolate">
+      <div className="isolate">
         <div className="relative isolate -z-10">
           <svg
             className="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
@@ -223,7 +223,7 @@ export default function AproposDeNous() {
             ))}
           </dl>
         </div>
-      </main>
+      </div>
     </div>
   );
 }

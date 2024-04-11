@@ -5,6 +5,7 @@ import Navbar from '@components/Navbar';
 import clsx from 'clsx';
 import './globals.css';
 import Script from 'next/script';
+import { Suspense } from 'react';
 const degular = localFont({
   src: [
     {
@@ -55,7 +56,10 @@ export default function RootLayout({
         src="//static.klaviyo.com/onsite/js/klaviyo.js?company_id=RN4ngH"
       ></Script>
       <body>
-        <Navbar />
+        <Suspense>
+          <Navbar />
+        </Suspense>
+
         {children}
         <Footer />
       </body>
