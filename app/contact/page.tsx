@@ -76,11 +76,8 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a
-                    className="hover:text-vib-orange"
-                    href="tel:+1 (555) 234-5678"
-                  >
-                    +33 26 23 45 67 78
+                  <a className="hover:text-vib-orange" href="tel:+33658191932">
+                    06 58 19 19 32
                   </a>
                 </dd>
               </div>

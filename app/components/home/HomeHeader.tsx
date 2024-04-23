@@ -62,7 +62,7 @@ export default function HomeHeader() {
               OBTENIR UN DEVIS
             </button>
             <p className="justify-center items-center text-left md:text-2xl text-deep-green py-4 font-bold">
-              <a href="tel:+332623456778">+33 26 23 45 67 78</a>
+              <a href="tel:+33658191932">06 58 19 19 32</a>
             </p>
             <p className="justify-center items-center text-left md:text-2xl text-deep-green pb-4 font-bold">
               <a href="mailto:contact@arbouest.com">contact@arbouest.com</a>
