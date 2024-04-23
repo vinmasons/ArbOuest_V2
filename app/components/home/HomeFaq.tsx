@@ -16,12 +16,11 @@ const faqs = [
   {
     question: 'Comment sont calculés vos tarifs ?',
     answer:
-      'Nos tarifs sont établis en fonction du volume de travail et de la complexité des tâches à réaliser. Nous proposons des devis gratuits et personnalisés pour répondre précisément à vos besoins et assurer une transparence totale des coûts. Les modes de paiement acceptés incluent la carte bancaire, le chèque et le virement.',
+      'Nos tarifs sont établis en fonction du volume de travail et de la complexité des tâches à réaliser. Nous proposons des devis gratuits et personnalisés pour répondre précisément à vos besoins et assurer une transparence totale des coûts. Les modes de paiement acceptés incluent, le chèque et le virement.',
   },
   {
     question: 'Votre société intervient-elle partout en France ?',
-    answer:
-      "Oui, notre zone d'intervention couvre toute la France. Nous vous invitons à nous contacter pour vérifier nos disponibilités et planifier votre projet, peu importe votre localisation. Finistère Sud - Rayon de 30 kilomètres autour de Fouesnant.",
+    answer: 'Finistère Sud - Rayon de 30 kilomètres autour de Fouesnant.',
   },
   {
     question: "Quels sont les délais d'intervention habituels ?",
@@ -31,7 +30,7 @@ const faqs = [
   {
     question: "Quels conseils offrez-vous pour l'entretien des arbres ?",
     answer:
-      "Nous fournissons des conseils professionnels pour l'entretien régulier de vos arbres, adaptés à chaque espèce et à la saison. Pour plus d'informations, nous vous encourageons à nous contacter nos experts ou à consulter notre blog pour des conseils détaillés.",
+      "Nous fournissons des conseils professionnels pour l'entretien régulier de vos arbres, adaptés à chaque espèce et à la saison. Pour plus d'informations, nous vous encourageons à nous contacter ou à consulter notre blog pour des conseils détaillés.",
   },
   {
     question:
