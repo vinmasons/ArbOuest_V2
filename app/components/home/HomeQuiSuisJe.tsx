@@ -59,20 +59,23 @@ export default function HomeQuiSuisJe() {
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4 ">
-            {featuresQuiSuisJe.map((feature) => (
-              <div key={feature.name} className="flex flex-col ">
-                <dt className="text-base font-semibold leading-7 text-deep-green  mx-auto">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
+            {featuresQuiSuisJe.map((feature, index) => (
+              <div
+                key={feature.name}
+                className="flex flex-col items-center justify-center px-4"
+              >
+                <dt className="text-base font-semibold leading-7 text-deep-green text-center">
                   <div className="mb-6 flex h-14 w-14 items-center justify-center">
                     <feature.icon
-                      className="h-14 w-14 md:h-20 md:w-20 text-vib-orange  hover:text-deep-green transition duration-1000 ease-in-out"
+                      className="h-14 w-14 md:h-20 md:w-20 text-vib-orange hover:text-deep-green transition duration-1000 ease-in-out"
                       aria-hidden="true"
                     />
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-900">
-                  <p className="flex-auto">{feature.description}</p>
+                <dd className="mt-1 text-base leading-7 text-gray-900 text-center">
+                  <p>{feature.description}</p>
                 </dd>
               </div>
             ))}

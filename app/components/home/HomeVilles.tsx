@@ -1,12 +1,11 @@
-import { RiTreeFill } from 'react-icons/ri';
-import { LuTrees } from 'react-icons/lu';
-import { GiPineTree } from 'react-icons/gi';
-import { PictoQuimper } from '../shared/pictos/PictoQuimper';
-import { PictoConcarneau } from '../shared/pictos/PictoConcarneau';
+'use client';
+import React, { useState } from 'react';
 import { PictoBenodet } from '../shared/pictos/PictoBenodet';
+import { PictoConcarneau } from '../shared/pictos/PictoConcarneau';
+import { PictoDouarnenez } from '../shared/pictos/PictoDouarnenez';
 import { PictoFouesnant } from '../shared/pictos/PictoFouesnant';
 import { PictoPontAven } from '../shared/pictos/PictoPontAven';
-import { PictoDouarnenez } from '../shared/pictos/PictoDouarnenez';
+import { PictoQuimper } from '../shared/pictos/PictoQuimper';
 const villesDestinations = [
   {
     name: 'Quimper',
@@ -144,14 +143,20 @@ const villesDestinations = [
 ];
 
 export default function HomeVilles() {
+  const initialDisplayCount = 6; // Initial number of items to display
+  const [displayCount, setDisplayCount] = useState(initialDisplayCount);
+
+  const loadMore = () => {
+    setDisplayCount((prevCount) => prevCount + 6); // Load 6 more items each time
+  };
+
   return (
     <div className="bg-deep-green py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8" id="villes">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-vib-orange">
             Votre partenaire local
           </h2>
-
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Arb&lsquo;Ouest, à votre service dans l&lsquo;Ouest
           </p>
@@ -159,15 +164,13 @@ export default function HomeVilles() {
             Découvrez la gamme de services que nous proposons dans votre ville.
             Spécialistes de l&lsquo;arboriculture, nous sommes là pour répondre
             à tous vos besoins.
-            <br /> 30km autour de Fouesnant
+            <br />
+            30km autour de Fouesnant
           </p>
         </div>
-        <div
-          className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none"
-          id="villes"
-        >
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            {villesDestinations.map((feature) => (
+            {villesDestinations.slice(0, displayCount).map((feature) => (
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-100">
                   <feature.icon
@@ -182,6 +185,14 @@ export default function HomeVilles() {
               </div>
             ))}
           </dl>
+          {displayCount < villesDestinations.length && (
+            <button
+              onClick={loadMore}
+              className="mt-4 px-4 py-2 bg-vib-orange text-white rounded hover:bg-orange-500 transition mx-auto block"
+            >
+              Afficher plus
+            </button>
+          )}
         </div>
       </div>
     </div>

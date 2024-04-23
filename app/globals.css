@@ -18,3 +18,15 @@
     @apply pb-[4vh] md:pb-[7vh] pt-[4vh] md:pt-[7vh];
   }
 }
+.features-qui-suis-je div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; /* Ensures all blocks are the same height */
+}
+
+.features-qui-suis-je dt,
+.features-qui-suis-je dd {
+  text-align: center;
+}

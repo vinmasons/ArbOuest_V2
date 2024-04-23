@@ -3,15 +3,12 @@ import { VisualEditing, toPlainText } from 'next-sanity';
 import { draftMode } from 'next/headers';
 import '../globals.css';
 
-import Navbar from '@components/Navbar';
-
 import AlertBanner from './alert-banner';
 
 import * as demo from '@/sanity/lib/demo';
 import { sanityFetch } from '@/sanity/lib/fetch';
 import { SettingsQueryResponse, settingsQuery } from '@/sanity/lib/queries';
 import { resolveOpenGraphImage } from '@/sanity/lib/utils';
-import { Suspense } from 'react';
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await sanityFetch<SettingsQueryResponse>({
