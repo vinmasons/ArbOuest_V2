@@ -163,7 +163,7 @@ export default function HomeVilles() {
     setVisibleCount((prev) => prev + (window.innerWidth <= 768 ? 3 : 6));
   };
   return (
-    <div className="bg-deep-green py-24 sm:py-32" id="villes">
+    <div className="bg-deep-green py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-vib-orange">

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { VisualEditing, toPlainText } from 'next-sanity';
 import { draftMode } from 'next/headers';
 import '../globals.css';
+import GlobalLayout from '../layout';
 
 import AlertBanner from './alert-banner';
 
@@ -43,16 +44,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function BlogLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <section>
+    <GlobalLayout>
       {draftMode().isEnabled && <AlertBanner />}
 
       {children}
 
       {draftMode().isEnabled && <VisualEditing />}
-    </section>
+    </GlobalLayout>
   );
 }

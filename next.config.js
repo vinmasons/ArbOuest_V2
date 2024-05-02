@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+
   experimental: {
     // Used to guard against accidentally leaking SANITY_API_READ_TOKEN to the browser
     taint: true, nextScriptWorkers: true,
@@ -16,5 +17,5 @@ module.exports = {
         hostname: 'images.unsplash.com',
       },
     ],
-  },
+  }, swcMinify: true,
 };

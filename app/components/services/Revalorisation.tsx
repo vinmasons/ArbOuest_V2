@@ -51,7 +51,7 @@ export default function RevalorisationBois() {
           <div className="mt-10 flex">
             <Link
               href="/contact"
-              className="rounded-md bg-vib-orange px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-arb-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-green"
+              className="rounded-md bg-deep-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-arb-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-green"
             >
               Contactez nous
             </Link>

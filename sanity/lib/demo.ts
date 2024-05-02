@@ -13,7 +13,7 @@ export const description = [
         _key: '4a58edd077880',
         _type: 'span',
         marks: [],
-        text: 'Votre expert en embellissement et entretien d‘espaces verts',
+        text: 'Arbouest Toujours plus proche de vous !',
       },
     ],
 
@@ -21,5 +21,4 @@ export const description = [
   },
 ];
 
-export const ogImageTitle =
-  'Votre expert en embellissement et entretien d‘espaces verts';
+export const ogImageTitle = 'Arbouest Toujours plus proche de vous !';

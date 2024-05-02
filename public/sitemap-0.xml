@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://arbouest.com/mentions-legales/politique-de-confidentialite</loc><lastmod>2024-04-10T05:17:52.041Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://arbouest.com/a-propos</loc><lastmod>2024-04-10T05:17:52.042Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://arbouest.com/nos-prestations</loc><lastmod>2024-04-10T05:17:52.042Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://arbouest.com/politique/cookies</loc><lastmod>2024-04-10T05:17:52.042Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://arbouest.com</loc><lastmod>2024-04-10T05:17:52.042Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://arbouest.com/contact</loc><lastmod>2024-04-10T05:17:52.042Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/apple-icon-1gp61b.png</loc><lastmod>2024-05-02T10:06:01.284Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/icon-1gp61b.svg</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/icon-1gp61b.png</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/icon-1gp61b.ico</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/mentions-legales/politique-de-confidentialite</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/politique/cookies</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/contact</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/a-propos</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/nos-prestations</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/blog</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://www.arbouest.com/blog/posts/test</loc><lastmod>2024-05-02T10:06:01.285Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

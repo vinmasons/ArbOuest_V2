@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://arbouest.com
+Host: https://www.arbouest.com
 
 # Sitemaps
-Sitemap: https://arbouest.com/sitemap.xml
+Sitemap: https://www.arbouest.com/sitemap.xml

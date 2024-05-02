@@ -3,7 +3,7 @@ import Link from 'next/link';
 const footnav = {
   main: [
     { name: 'Accueil', href: '/' },
-    { name: 'Nos Services', href: '/nos-prestations' },
+    { name: 'Nos Services', href: '/services' },
     { name: 'À Propos', href: '/a-propos' },
     { name: 'Villes', href: '/#villes' },
     { name: 'Contact', href: '/contact' },

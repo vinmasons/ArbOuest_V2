@@ -4,6 +4,7 @@ import {
   PhoneIcon,
 } from '@heroicons/react/24/outline';
 import { Metadata } from 'next';
+import ContactForm from '../components/form/ContactForm';
 export const metadata: Metadata = {
   title:
     'Contactez ARB’OUEST - Experts en Entretien d’Espaces Verts à Fouesnant',
@@ -76,8 +77,11 @@ export default function Contact() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-vib-orange" href="tel:+33658191932">
-                    06 58 19 19 32
+                  <a
+                    className="hover:text-vib-orange"
+                    href="tel:+1 (555) 234-5678"
+                  >
+                    +33 26 23 45 67 78
                   </a>
                 </dd>
               </div>
@@ -101,109 +105,7 @@ export default function Contact() {
             </dl>
           </div>
         </div>
-        <form
-          action="#"
-          method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
-        >
-          <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div>
-                <label
-                  htmlFor="first-name"
-                  className="block text-sm font-semibold leading-6 text-deep-green "
-                >
-                  Prénom
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="first-name"
-                    id="first-name"
-                    autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-vib-orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-deep-green sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="last-name"
-                  className="block text-sm font-semibold leading-6 text-deep-green "
-                >
-                  Nom
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="text"
-                    name="last-name"
-                    id="last-name"
-                    autoComplete="family-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-vib-orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-deep-green sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-deep-green "
-                >
-                  Email
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    autoComplete="email"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-vib-orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-deep-green sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-deep-green "
-                >
-                  Numéro de téléphone
-                </label>
-                <div className="mt-2.5">
-                  <input
-                    type="tel"
-                    name="phone-number"
-                    id="phone-number"
-                    autoComplete="tel"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-vib-orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-deep-green sm:text-sm sm:leading-6"
-                  />
-                </div>
-              </div>
-              <div className="sm:col-span-2">
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-deep-green "
-                >
-                  Message
-                </label>
-                <div className="mt-2.5">
-                  <textarea
-                    name="message"
-                    id="message"
-                    rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-vib-orange shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-deep-green sm:text-sm sm:leading-6"
-                    defaultValue={''}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="mt-8 flex justify-end">
-              <button
-                type="submit"
-                className="rounded-md bg-deep-green px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-prime focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-green"
-              >
-                Envoyer le message
-              </button>
-            </div>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </div>
   );
