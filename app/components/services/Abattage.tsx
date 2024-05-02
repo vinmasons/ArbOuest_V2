@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Abattage() {
   return (
-    <div className="bg-deep-green py-24 sm:py-32">
+    <div className="bg-soft-cream py-24 sm:py-32" id="abattage">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-vib-orange sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-deep-green sm:text-4xl">
             Maîtrise et Précision en Abattage : Techniques et Sécurité
           </h2>
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-white lg:max-w-none lg:grid-cols-2">
+          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700  lg:max-w-none lg:grid-cols-2">
             <div>
               <p>
                 L&lsquo;art de l&lsquo;abattage, une compétence cruciale dans le

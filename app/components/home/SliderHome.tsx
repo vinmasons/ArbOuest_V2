@@ -16,7 +16,7 @@ const slides = [
     alt: 'Elagage - Taille raisonnée',
     tittle: 'Elagage - Taille raisonnée',
     cta: 'Decouvrir',
-    url: '/nos-prestations',
+    url: '/nos-prestations#élagage',
   },
   {
     src: 'https://images.unsplash.com/photo-1680264524689-a0b5e3da0a50?q=80&w=3987&1280=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -24,7 +24,7 @@ const slides = [
     tittle: 'L‘Art de l‘Abattage',
 
     cta: 'voir',
-    url: '/nos-prestations',
+    url: '/nos-prestations#abattage',
   },
   {
     src: 'https://plus.unsplash.com/premium_photo-1678121491049-45de2123399a?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -32,7 +32,7 @@ const slides = [
     tittle: 'Haubanage',
 
     cta: 'Voir Plus',
-    url: '/nos-prestations',
+    url: '/nos-prestations#haubanage',
   },
   {
     src: 'https://plus.unsplash.com/premium_photo-1663133883095-831fc9773d78?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -40,7 +40,7 @@ const slides = [
     tittle: 'Revalorisation du bois',
 
     cta: 'En savoir Plus',
-    url: '/nos-prestations',
+    url: '/nos-prestations#revalorisation',
   },
 ];
 

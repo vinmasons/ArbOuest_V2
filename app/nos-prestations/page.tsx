@@ -3,6 +3,7 @@ import Abattage from '@components/services/Abattage';
 import Elagage from '@components/services/Elagage';
 import HeaderElagage from '@components/services/HeaderElagage';
 import RevalorisationBois from '@components/services/Revalorisation';
+import Haubanage from '../components/services/Haubanage';
 export const metadata: Metadata = {
   title: 'Services d’Élagage, Abattage et Revalorisation du Bois - ARB’OUEST',
   description:
@@ -13,11 +14,12 @@ export const metadata: Metadata = {
 
 export default function ServicesElagage() {
   return (
-    <>
+    <main>
       <HeaderElagage />
       <Elagage />
+      <Haubanage />
       <Abattage />
       <RevalorisationBois />
-    </>
+    </main>
   );
 }

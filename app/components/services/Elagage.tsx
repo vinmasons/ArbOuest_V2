@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function Elagage() {
   return (
-    <div className="bg-soft-cream py-24 sm:py-32">
+    <div className="bg-soft-cream py-24 sm:py-32" id="élagage">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-deep-green sm:text-4xl">

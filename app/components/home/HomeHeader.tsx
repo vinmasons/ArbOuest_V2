@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Elageur from '../../../public/HomeBg.webp';
+import Link from 'next/link';
 export default function HomeHeader() {
   return (
     <>
@@ -55,12 +56,12 @@ export default function HomeHeader() {
               professionnels et personnalisés pour répondre à toutes vos
               exigences en matière d&lsquo;arbres.
             </p>
-            <button
-              type="button"
+            <Link
+              href="/contact"
               className=" bg-vib-orange px-3.5 py-2.5 text-3xl font-bold text-white shadow-sm hover:bg-vib-orange/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
               OBTENIR UN DEVIS
-            </button>
+            </Link>
             <p className="justify-center items-center text-left md:text-2xl text-deep-green py-4 font-bold">
               <a href="tel:+33658191932">06 58 19 19 32</a>
             </p>

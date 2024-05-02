@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function RevalorisationBois() {
   return (
-    <div className="bg-soft-cream py-24 sm:py-32">
+    <div className="bg-deep-green  py-24 sm:py-32" id="revalorisation">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 className="mt-2 text-3xl font-bold tracking-tight text-deep-green sm:text-4xl">
+          <h2 className="mt-2 text-3xl font-bold tracking-tight text-vib-orange sm:text-4xl">
             Revalorisation du Bois : Écologie et Innovation
           </h2>
-          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
+          <div className="mt-10 grid max-w-xl grid-cols-1 gap-8 text-lg leading-7 text-white lg:max-w-none lg:grid-cols-2">
             <div>
               <p>
                 Arb&lsquo;Ouest embrasse une multitude d&lsquo;approches pour la
@@ -51,7 +51,7 @@ export default function RevalorisationBois() {
           <div className="mt-10 flex">
             <Link
               href="/contact"
-              className="rounded-md bg-deep-green px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-arb-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-green"
+              className="rounded-md bg-vib-orange px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-arb-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-deep-green"
             >
               Contactez nous
             </Link>
