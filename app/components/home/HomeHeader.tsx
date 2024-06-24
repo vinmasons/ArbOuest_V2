@@ -1,6 +1,8 @@
 import Image from 'next/image';
-import Elageur from '../../../public/HomeBg.webp';
 import Link from 'next/link';
+
+import Elageur from '../../../public/HomeBg.webp';
+
 export default function HomeHeader() {
   return (
     <>

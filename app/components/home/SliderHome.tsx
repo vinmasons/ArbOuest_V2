@@ -1,15 +1,16 @@
 'use client';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
+
 // import required modules
 import Image from 'next/image';
 import Link from 'next/link';
 import { Autoplay, EffectFade } from 'swiper/modules';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 const slides = [
   {
     src: 'https://plus.unsplash.com/premium_photo-1663133883095-831fc9773d78?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',

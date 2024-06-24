@@ -1,10 +1,14 @@
 import type { Metadata } from 'next';
+import './globals.css';
+
+import clsx from 'clsx';
 import localFont from 'next/font/local';
+import Script from 'next/script';
+
 import Footer from '@components/Footer';
 import Navbar from '@components/Navbar';
-import clsx from 'clsx';
-import './globals.css';
-import Script from 'next/script';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 const degular = localFont({
   src: [
     {
@@ -58,7 +62,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-      </body>
+      </body>{' '}
+      <GoogleAnalytics gaId="G-RQ35G728V3" />
     </html>
   );
 }

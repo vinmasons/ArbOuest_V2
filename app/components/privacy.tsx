@@ -1,7 +1,4 @@
-import {
-  CheckCircleIcon,
-  InformationCircleIcon,
-} from '@heroicons/react/20/solid';
+import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid';
 
 export default function PolitiqueConfidentialite() {
   return (

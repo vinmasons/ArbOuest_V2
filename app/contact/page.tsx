@@ -1,10 +1,9 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from '@heroicons/react/24/outline';
 import { Metadata } from 'next';
+
+import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+
 import ContactForm from '../components/form/ContactForm';
+
 export const metadata: Metadata = {
   title:
     'Contactez ARB’OUEST - Experts en Entretien d’Espaces Verts à Fouesnant',

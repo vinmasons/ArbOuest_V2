@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { ArbreSvg } from '../shared/Arbre';
 
 export default function HomeQui() {

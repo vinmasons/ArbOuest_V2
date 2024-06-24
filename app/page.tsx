@@ -4,6 +4,7 @@ import HomeQui from '@components/home/HomeQui';
 import HomeQuiSuisJe from '@components/home/HomeQuiSuisJe';
 import HomeVilles from '@components/home/HomeVilles';
 import SliderHome from '@components/home/SliderHome';
+
 import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'ARB’OUEST - Expertise en Élagage et Abattage à Fouesnant',

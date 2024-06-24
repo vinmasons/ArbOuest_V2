@@ -1,8 +1,4 @@
-import {
-  PortableText,
-  type PortableTextComponents,
-  type PortableTextBlock,
-} from 'next-sanity';
+import { PortableText, PortableTextBlock, PortableTextComponents, type } from 'next-sanity';
 
 export default function CustomPortableText({
   className,

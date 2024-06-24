@@ -1,7 +1,7 @@
-import { Image } from "next-sanity/image";
+import { Image } from 'next-sanity/image';
 
-import { Author } from "@/sanity/lib/queries";
-import { urlForImage } from "@/sanity/lib/utils";
+import { Author } from '@/sanity/lib/queries';
+import { urlForImage } from '@/sanity/lib/utils';
 
 export default function Avatar({ name, picture }: Author) {
   return (

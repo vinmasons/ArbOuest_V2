@@ -1,22 +1,18 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
 
+import * as demo from '@/sanity/lib/demo';
+import { sanityFetch } from '@/sanity/lib/fetch';
+import {
+    heroQuery, HeroQueryResponse, Post, settingsQuery, SettingsQueryResponse
+} from '@/sanity/lib/queries';
+
 import Avatar from './avatar';
 import CoverImage from './cover-image';
 import DateComponent from './date';
 import MoreStories from './more-stories';
 import Onboarding from './onboarding';
 import PortableText from './portable-text';
-
-import * as demo from '@/sanity/lib/demo';
-import { sanityFetch } from '@/sanity/lib/fetch';
-import {
-  HeroQueryResponse,
-  Post,
-  SettingsQueryResponse,
-  heroQuery,
-  settingsQuery,
-} from '@/sanity/lib/queries';
 
 function Intro(props: { title: string | null | undefined; description: any }) {
   const title = props.title || demo.title;

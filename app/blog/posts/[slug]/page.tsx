@@ -4,21 +4,18 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Suspense } from 'react';
 
+import * as demo from '@/sanity/lib/demo';
+import { sanityFetch } from '@/sanity/lib/fetch';
+import {
+    postQuery, PostQueryResponse, settingsQuery, SettingsQueryResponse
+} from '@/sanity/lib/queries';
+import { resolveOpenGraphImage } from '@/sanity/lib/utils';
+
 import Avatar from '../../avatar';
 import CoverImage from '../../cover-image';
 import DateComponent from '../../date';
 import MoreStories from '../../more-stories';
 import PortableText from '../../portable-text';
-
-import { sanityFetch } from '@/sanity/lib/fetch';
-import {
-  PostQueryResponse,
-  SettingsQueryResponse,
-  postQuery,
-  settingsQuery,
-} from '@/sanity/lib/queries';
-import { resolveOpenGraphImage } from '@/sanity/lib/utils';
-import * as demo from '@/sanity/lib/demo';
 
 type Props = {
   params: { slug: string };

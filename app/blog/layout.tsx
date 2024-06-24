@@ -1,15 +1,16 @@
-import { Metadata } from 'next';
-import { VisualEditing, toPlainText } from 'next-sanity';
-import { draftMode } from 'next/headers';
 import '../globals.css';
-import GlobalLayout from '../layout';
 
-import AlertBanner from './alert-banner';
+import { Metadata } from 'next';
+import { toPlainText, VisualEditing } from 'next-sanity';
+import { draftMode } from 'next/headers';
 
 import * as demo from '@/sanity/lib/demo';
 import { sanityFetch } from '@/sanity/lib/fetch';
-import { SettingsQueryResponse, settingsQuery } from '@/sanity/lib/queries';
+import { settingsQuery, SettingsQueryResponse } from '@/sanity/lib/queries';
 import { resolveOpenGraphImage } from '@/sanity/lib/utils';
+
+import GlobalLayout from '../layout';
+import AlertBanner from './alert-banner';
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await sanityFetch<SettingsQueryResponse>({

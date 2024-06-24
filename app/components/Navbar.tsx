@@ -1,8 +1,10 @@
 'use client';
-import { Dialog, Popover } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { useState } from 'react';
+
+import { Dialog, Popover } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
 import { Logo } from './shared/Logo';
 
 function classNames(...classes: string[]) {

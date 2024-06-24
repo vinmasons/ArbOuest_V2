@@ -5,8 +5,8 @@
  * Once you have content, and know where to go to access the Sanity Studio and create content, you can delete this file.
  */
 
-import Link from "next/link";
-import { useSyncExternalStore } from "react";
+import Link from 'next/link';
+import { useSyncExternalStore } from 'react';
 
 const emptySubscribe = () => () => {};
 

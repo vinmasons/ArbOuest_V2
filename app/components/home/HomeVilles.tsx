@@ -1,11 +1,13 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import { PictoQuimper } from '../shared/pictos/PictoQuimper';
-import { PictoConcarneau } from '../shared/pictos/PictoConcarneau';
+import React, { useEffect, useState } from 'react';
+
 import { PictoBenodet } from '../shared/pictos/PictoBenodet';
+import { PictoConcarneau } from '../shared/pictos/PictoConcarneau';
+import { PictoDouarnenez } from '../shared/pictos/PictoDouarnenez';
 import { PictoFouesnant } from '../shared/pictos/PictoFouesnant';
 import { PictoPontAven } from '../shared/pictos/PictoPontAven';
-import { PictoDouarnenez } from '../shared/pictos/PictoDouarnenez';
+import { PictoQuimper } from '../shared/pictos/PictoQuimper';
+
 const villesDestinations = [
   {
     name: 'Quimper',
