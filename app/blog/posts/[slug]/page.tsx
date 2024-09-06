@@ -71,13 +71,13 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <div className="container mx-auto px-5">
-      <h2 className="mb-16 mt-10 text-2xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
+      <h2 className="mb-16 mt-10 text-xl font-bold leading-tight tracking-tight md:text-4xl md:tracking-tighter">
         <Link href="/" className="hover:underline">
           {settings?.title || demo.title}
         </Link>
       </h2>
       <article>
-        <h1 className="text-balance mb-12 text-6xl font-bold leading-tight tracking-tighter md:text-7xl md:leading-none lg:text-8xl">
+        <h1 className="text-balance mb-12 text-3xl font-bold leading-tight tracking-tighter md:text-6xl md:leading-none lg:text-6xl">
           {post.title}
         </h1>
         <div className="hidden md:mb-12 md:block">
@@ -102,7 +102,7 @@ export default async function PostPage({ params }: Props) {
         </div>
         {post.content?.length && (
           <PortableText
-            className="mx-auto max-w-2xl text-black"
+            className="mx-auto max-w-5xl text-black text-xl"
             value={post.content}
           />
         )}
