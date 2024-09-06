@@ -22,7 +22,7 @@ export interface Post {
   coverImage?: (Image & { alt?: string }) | null;
   date: string;
   author?: Author | null;
-  body?: PortableTextBlock[] | null; // Ensure the interface supports 'body'
+  content?: PortableTextBlock[] | null; // Ensure the interface supports 'body'
 }
 
 const postFields = groq`
@@ -34,7 +34,7 @@ const postFields = groq`
   coverImage,
   "date": coalesce(date, _updatedAt),
   "author": author->{"name": coalesce(name, "Anonymous"), picture},
-  "body": body[]{   // Fetch all blocks in body, including nested structures
+  "content": content[]{   // Fetch all blocks in body, including nested structures
     ...,
     children[]{
       ...

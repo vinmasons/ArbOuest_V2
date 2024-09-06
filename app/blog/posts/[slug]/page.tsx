@@ -7,7 +7,10 @@ import { Suspense } from 'react';
 import * as demo from '@/sanity/lib/demo';
 import { sanityFetch } from '@/sanity/lib/fetch';
 import {
-    postQuery, PostQueryResponse, settingsQuery, SettingsQueryResponse
+  postQuery,
+  PostQueryResponse,
+  settingsQuery,
+  SettingsQueryResponse,
 } from '@/sanity/lib/queries';
 import { resolveOpenGraphImage } from '@/sanity/lib/utils';
 
