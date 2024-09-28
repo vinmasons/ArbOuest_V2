@@ -1,6 +1,10 @@
 import { Metadata } from 'next';
 
-import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import {
+  BuildingOffice2Icon,
+  EnvelopeIcon,
+  PhoneIcon,
+} from '@heroicons/react/24/outline';
 
 import ContactForm from '../components/form/ContactForm';
 
@@ -80,7 +84,7 @@ export default function Contact() {
                     className="hover:text-vib-orange"
                     href="tel:+1 (555) 234-5678"
                   >
-                    +33 26 23 45 67 78
+                    +33 (0)6 58 19 19 32
                   </a>
                 </dd>
               </div>
